@@ -15,12 +15,12 @@ app.get('/loaderio-5d61bd017c6434b01e6832ad4920eb45', (req, res) => res.sendFile
 
 app.use(
   '/books/:id/details',
-  proxy({ target: 'http://ec2-18-217-132-223.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }),
+  proxy({ target: 'http://ec2-18-191-160-157.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }),
 );
 
 app.use(
   '/books/details',
-  proxy({ target: 'http://ec2-18-217-132-223.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }),
+  proxy({ target: 'http://ec2-18-191-160-157.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }),
 );
 
 // hannah-service
