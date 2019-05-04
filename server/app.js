@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 const staticPath = `${__dirname}/../public`;
 app.use('/books/:id', express.static(staticPath));
 
-app.get('/loaderio-5d61bd017c6434b01e6832ad4920eb45', (req, res) => res.sendFile(path.resolve(`${__dirname}/../loaderio-key.txt`)));
+app.get('/loaderio-b87874e42d8ab66f4d2efca86fe6401d', (req, res) => res.sendFile(path.resolve(`${__dirname}/../loaderio-key.txt`)));
 
 app.use(
   '/books/:id/details',
